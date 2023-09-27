@@ -14,6 +14,12 @@ cat << EOM > /var/www/html/index.html
   <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
   <center><h2>Meow World!</h2></center>
   Welcome to Tri Bagus Pamungkas's app. Replace this text with your own.
+cd /root/terraform-cloud
+
+# 1. Create a policy set from VCS.
+# 2. Enable automated policy as code
+# 3. Apply to hashicat-aws workspace
+terraform apply -auto-approve
   <!-- END -->
 
   </div>
